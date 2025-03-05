@@ -1,0 +1,121 @@
+.header {
+  padding: 0 2.25rem;
+  background-color: aqua;
+}
+
+/* Barre de navigation */
+.mainNav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  flex-wrap: wrap;
+}
+.ww h1{
+  margin-left: -55vw;
+}
+/* Image Logo */
+.container1 {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 60px;
+  height: auto;
+}
+
+/* Côté droit de la navigation */
+.rightSideNav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Titre du site */
+.ww {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Conteneur des boutons */
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Boutons */
+.linkBTN {
+  width: 100px;
+  height: 35px;
+  font-weight: 500;
+  background: #ff725e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkBTN:hover {
+  background: #ff5733;
+  text-decoration: underline;
+}
+
+/* Séparateur "ou" */
+.or {
+  display: inline-block;
+  margin: 0 5px;
+  color: white;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablette */
+@media screen and (max-width: 1024px) {
+  .mainNav {
+    padding: 15px 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightSideNav {
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .mainNav {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightSideNav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .container2 {
+    flex-direction: column;
+    gap: 5px;
+    width: 119px;
+  }
+
+  .linkBTN {
+    width: 90%;
+  }
+}
